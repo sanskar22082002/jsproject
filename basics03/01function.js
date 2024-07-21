@@ -40,5 +40,46 @@ function loginUserMessage(username = "sanskar"){ //sanskar=>default
 console.log(loginUserMessage("sanskarkashyap"))
 console.log(loginUserMessage())
 
+//Functions with objects and array
+
+// function calculateCatPrice(...num1){//rest operator
+//     return num1
+// }
+
+// console.log(calculateCatPrice(200,400,500))//[ 200, 400, 500]
+
+function calculateCatPrice(val1, val2, ...num1){//rest operator
+    return num1
+}
+
+// console.log(calculateCatPrice(200,400,500, 2000))//val1=>200, val2=>400, num1=>500, num2=>2000
+//passing object inside function
+const user = {
+    username: "sanskar",
+    price: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`)
+
+}
+
+// handleObject(user)
+handleObject({
+    username: "sam",
+    price: 399
+})
+
+
+// passing array in function
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray))
+console.log(returnSecondValue([200, 400, 500, 1000]))
 
 
