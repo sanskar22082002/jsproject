@@ -45,10 +45,60 @@ const users = [ //objects inside array
     }
 ]
 users[1].email //access the object insisde array
-console.log(tinderUser)
+// console.log(tinderUser)
 
-console.log(Object.keys(tinderUser))//=>datatype is array
-console.log(Object.values(tinderUser))//datatype is array
-console.log(Object.entries(tinderUser))//=>har ek key values ko array ban jata hai
-console.log(Object.keys(tinderUser))
-console.log(tinderUser.hasOwnProperty('LoggedIn'))//to check this property is available or not
+// console.log(Object.keys(tinderUser))//=>datatype is array
+// console.log(Object.values(tinderUser))//datatype is array
+// console.log(Object.entries(tinderUser))//=>har ek key values ko array ban jata hai
+// console.log(Object.keys(tinderUser))
+// console.log(tinderUser.hasOwnProperty('LoggedIn'))//to check this property is available or not
+
+
+
+//Destructring
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+// const {courseInstructor} = course
+const {courseInstructor: instructor} = course  //we can change name=>destructuring
+
+// console.log(courseInstructor)
+console.log(instructor)
+
+// this for react => destruring
+
+// const navbar = ({company}) => {
+
+// }
+
+// navbar(company = "sanskar")
+
+//Api=>it take value from backend through JSON
+
+// {  //Json=> no name given to object
+//     "name": "sanskar",
+//     "coursename": "js in hindi",
+//     "price": "free"
+
+
+// }
+
+//api in array form
+
+[
+    {},
+    {},
+    {}
+]
+
+//tools for api=>json
+
+
+
+
