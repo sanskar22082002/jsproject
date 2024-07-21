@@ -36,14 +36,15 @@ Jsuser.greeting= function(){
     console.log("Hello Js User")
 }
 
-Jsuser.greeting= function(){
-    console.log(`Hello user ${this.name}`)//access any proper
+Jsuser.greetingTwo= function(){
+    console.log(`Hello user ${this.name}`)//access any same object => use this,property ko pata karne ke liye=> this lete hai
 }
 
 
 
-// console.log(Jsuser.greeting())
-console.log(Jsuser.greeting) //we get function return back means function's reference
 
+console.log(Jsuser.greeting) //we get function return back means function's reference
+console.log(Jsuser.greeting())
+console.log(Jsuser.greetingTwo())
 
 
