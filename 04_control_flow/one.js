@@ -1,0 +1,1 @@
+// scope of var is completely global,so we use let and const
